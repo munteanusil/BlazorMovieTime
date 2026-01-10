@@ -1,7 +1,7 @@
-  Blazor Movie App
+🎬 Blazor Movie App
 Blazor Movie App is a modern Single Page Application (SPA) built with Blazor WebAssembly and .NET 8. The application explores the cinematic universe using real-time data from The Movie Database (TMDB) API.
 
-  Key Features
+🚀 Key Features
 Movie Exploration: Browse the most popular and recent movies in a clean and intuitive interface.
 
 Responsive Design: Built with Bootstrap 5, ensuring a fluid experience across desktop, tablet, and mobile devices.
@@ -12,7 +12,7 @@ Modern Visual Effects: Integrated "Tilt" animations for movie cards and "Skeleto
 
 Detailed Insights: Dedicated pages for each movie, including synopsis, ratings, genres, and external links to IMDb or official websites.
 
-  Tech Stack
+🛠️ Tech Stack
 Frontend: Blazor WebAssembly (.NET 8)
 
 Styling: Bootstrap 5 & Custom CSS
@@ -23,7 +23,6 @@ JS Interop: Used for external graphical libraries (Vanilla Tilt).
 
 Icons: Bootstrap Icons & Devicons
 
-  Visual Demo
 ⚙️ Installation & Setup
 Clone the repository:
 
