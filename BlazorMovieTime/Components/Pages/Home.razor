@@ -1,4 +1,7 @@
 ﻿@page "/"
+@using BlazorMovieTime.Models
+@using BlazorMovieTime.Services
+@inject TMDBClient TMDB
 
 <PageTitle>Home</PageTitle>
 
@@ -10,5 +13,31 @@
 
     <img src="/images/THEMOVEDBLogo.svg" class="w-25" alt="Logo" />
 
+
     <button class="btn btn-primary mt-3">Primary button</button>
+    @if (movies is not null)
+    {
+            <h2>Popular Movies</h2>
+            <ul>
+                @foreach (PopularMovie movie in movies.Results)
+                {
+                    <li>@movie.Title</li>
+                }
+            </ul>
+
+    }
+    else
+    {
+        <p>Movies are still loading..</p>
+    }
+
 </div>
+
+@code {
+    private PopularMoviePagedResponse? movies;
+
+    protected override async Task OnInitializedAsync()
+    {
+        movies = await TMDB.GetPopularMoviesAsync();
+    }
+}
